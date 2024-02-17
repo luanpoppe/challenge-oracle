@@ -1,0 +1,78 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;
+    max-height: 100vh;
+    /* margin: inherit; */
+    margin: 5vh;
+}
+
+.logo {
+    width: 32px;
+    height: 48px;
+    /* margin: 40px; */
+    /* margin-left: 40px; */
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    height: 95vh;
+}
+
+.left-section {
+    /* background-color: red; */
+    margin-top: 60px;
+    margin-right: 80px;
+}
+
+.right-section {
+    background-color: #ffffff;
+    width: 400px;
+    height: 100%;
+    border-radius: 32px;
+
+    display: flex;
+    align-items: center;
+}
+
+.input input {
+    width: 680px;
+    height: 48px;
+    background-color: #F3F5FC;
+    border: none;
+}
+
+.right-section--inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+.right-section--inside--middle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.right-section--inside--bottom {
+    font-size: 16px;
+    text-align: center;
+}
+
+.no-message-found {
+    width: 336px;
+    height: 304px;
+    margin-bottom: 32px;
+}
