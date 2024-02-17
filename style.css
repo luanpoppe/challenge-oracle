@@ -26,7 +26,7 @@ body {
 main {
     display: flex;
     justify-content: space-between;
-    height: 95vh;
+    height: 90vh;
 }
 
 .left-section {
@@ -50,6 +50,12 @@ main {
     height: 48px;
     background-color: #F3F5FC;
     border: none;
+}
+
+.input input::placeholder {
+    font-family: inherit;
+    font-size: 32px;
+    color: #0A3871;
 }
 
 .right-section--inside {
