@@ -20,7 +20,17 @@
         </header>
         <section class="left-section">
             <div class="input">
-                <input type="text" placeholder="digite seu texto">
+                <textarea placeholder="digite seu texto" wrap="soft"></textarea>
+            </div>
+            <div class="footer">
+                <div class="smallText">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="Importante!">
+                    Apenas letras minúsculas e sem acento.
+                </div>
+                <div class="botoesCriptografia">
+                    <button class="botao botaoCripto" onclick="onCriptografar()">Criptografar</button>
+                    <button class="botao botaoDescripto" onclick="onDescriptografar()">Descriptografar</button>
+                </div>
             </div>
         </section>
         <section class="right-section">
@@ -33,8 +43,13 @@
                     Digite um texto que você deseja criptografar ou descriptografar.
                 </div>
             </div>
+            <div class="right-section--inside--after-click">
+                <div id="message-after-click" class="right-section--inside--after-click--text"></div>
+                <button class="botao botaoDescripto" onclick="copyContent()">Copiar</button>
+            </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

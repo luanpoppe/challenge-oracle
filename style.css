@@ -30,8 +30,11 @@ main {
 }
 
 .left-section {
-    /* background-color: red; */
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 60px;
     margin-right: 80px;
 }
 
@@ -45,17 +48,63 @@ main {
     align-items: center;
 }
 
-.input input {
-    width: 680px;
-    height: 48px;
-    background-color: #F3F5FC;
-    border: none;
-}
-
-.input input::placeholder {
+textarea,
+textarea::placeholder {
     font-family: inherit;
     font-size: 32px;
     color: #0A3871;
+}
+
+.input {
+    height: 50%;
+}
+
+.input textarea {
+    width: 680px;
+    height: 100%;
+    background-color: #F3F5FC;
+    border: none;
+    resize: none;
+    text-align: justify;
+    padding: 2%;
+}
+
+
+.botoesCriptografia {
+    width: 85%;
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.botao {
+    padding: 24px;
+    border-radius: 24px;
+    width: 50%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.botoesCriptografia .botaoCripto {
+    color: #ffffff;
+    background-color: #0A3871;
+
+}
+
+.botaoDescripto {
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+
+.smallText {
+    color: #495057;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .right-section--inside {
@@ -81,4 +130,37 @@ main {
     width: 336px;
     height: 304px;
     margin-bottom: 32px;
+}
+
+.right-section--inside--after-click {
+    display: none;
+}
+
+.right-section--inside--after-click--text {
+    font-size: 24px;
+    word-break: break-all
+}
+
+.right-section--inside--after-click.showedText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 32px;
+}
+
+.right-section--inside--after-click.showedText button {
+    width: 100%;
+}
+
+.right-section-after-click {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#message-after-click {
+    color: #0A3871;
 }
